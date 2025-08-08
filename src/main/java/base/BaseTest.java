@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.FormAuthenticationPage;
 import pages.HomePage;
+import pages.JavaScriptAlertsPage;
 import pages.SecureAreaPage;
 
 public class BaseTest {
@@ -14,6 +15,7 @@ public class BaseTest {
 	protected HomePage homepage;
 	protected FormAuthenticationPage formauthenticationpage;
 	protected SecureAreaPage secureareapage;
+	protected JavaScriptAlertsPage javascriptalertspage;
 	
 	@BeforeMethod
 	public void setUp() {
@@ -23,7 +25,8 @@ public class BaseTest {
 		homepage = new HomePage(driver);
 		formauthenticationpage = new FormAuthenticationPage(driver);
 		secureareapage = new SecureAreaPage(driver);
-		
+		javascriptalertspage = new JavaScriptAlertsPage(driver);
+		javascriptalertspage.navigateToAlerts();
 	}
 
 }
