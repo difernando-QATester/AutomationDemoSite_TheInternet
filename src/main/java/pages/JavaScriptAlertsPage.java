@@ -8,7 +8,6 @@ public class JavaScriptAlertsPage {
 
 	private WebDriver driver;
 
-	private By alert = By.linkText("JavaScript Alerts");
 	private By jsalert = By.xpath("//button[@onclick='jsAlert()']");
 	private By jsconfirm = By.xpath("//button[@onclick='jsConfirm()']");
 	private By jsprompt = By.xpath("//button[@onclick='jsPrompt()']");
@@ -16,10 +15,6 @@ public class JavaScriptAlertsPage {
 
 	public JavaScriptAlertsPage(WebDriver driver) {
 		this.driver = driver;
-	}
-
-	public void navigateToAlerts() {
-		driver.findElement(alert).click();
 	}
 
 	public String handleJsAlert() {

@@ -12,7 +12,7 @@ public class JavaScriptAlertsTest extends BaseTest {
 	
 	@Test(priority = 1)
 	public void testJsAlertText() {
-                
+		homepage.navigateToAlerts();
         String actualAlertText = javascriptalertspage.handleJsAlert();
         String expectedAlertText = "I am a JS Alert";
         Assert.assertTrue(actualAlertText.contains(expectedAlertText) , "Alert is wrong");
@@ -22,6 +22,7 @@ public class JavaScriptAlertsTest extends BaseTest {
 	
 	@Test(priority = 2)
 	public void testJsAlertConfirm() {
+		homepage.navigateToAlerts();
 		javascriptalertspage.handleJsConfirm();
 		javascriptalertspage.jsConfirmAlerResult();
 				
@@ -29,6 +30,7 @@ public class JavaScriptAlertsTest extends BaseTest {
 	
 	@Test(priority = 3)
 	public void testJsAlertPrompt() {
+		homepage.navigateToAlerts();
 		javascriptalertspage.hanldeJsPrompt("I'm DIlki");
 		javascriptalertspage.jspromptAlerResult();
 	}

@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import pages.FormAuthenticationPage;
@@ -26,7 +27,11 @@ public class BaseTest {
 		formauthenticationpage = new FormAuthenticationPage(driver);
 		secureareapage = new SecureAreaPage(driver);
 		javascriptalertspage = new JavaScriptAlertsPage(driver);
-		javascriptalertspage.navigateToAlerts();
+		//homepage.navigateToAlerts();
+	}
+	@AfterMethod
+	public void closeDown() {
+		driver.close();
 	}
 
 }
