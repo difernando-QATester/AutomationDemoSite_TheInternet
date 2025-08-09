@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import pages.DynamicLoadingEx1Page;
+import pages.DynamicLoadingPage;
 import pages.FormAuthenticationPage;
 import pages.HomePage;
 import pages.JavaScriptAlertsPage;
@@ -17,6 +19,8 @@ public class BaseTest {
 	protected FormAuthenticationPage formauthenticationpage;
 	protected SecureAreaPage secureareapage;
 	protected JavaScriptAlertsPage javascriptalertspage;
+	protected DynamicLoadingPage dynamicloadingpage;
+	protected DynamicLoadingEx1Page dynamicloadingex1page;
 	
 	@BeforeMethod
 	public void setUp() {
@@ -27,11 +31,12 @@ public class BaseTest {
 		formauthenticationpage = new FormAuthenticationPage(driver);
 		secureareapage = new SecureAreaPage(driver);
 		javascriptalertspage = new JavaScriptAlertsPage(driver);
-		//homepage.navigateToAlerts();
+		dynamicloadingpage = new DynamicLoadingPage (driver);
+		dynamicloadingex1page = new DynamicLoadingEx1Page(driver);
 	}
 	@AfterMethod
 	public void closeDown() {
-		driver.close();
+		//driver.close();
 	}
 
 }

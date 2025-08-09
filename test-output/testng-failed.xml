@@ -7,9 +7,16 @@
         <methods>
           <include name="setUp"/>
           <include name="testJsAlertPrompt"/>
-          <include name="testJsAlertConfirm"/>
+          <include name="closeDown"/>
         </methods>
       </class> <!-- tests.JavaScriptAlertsTest -->
+      <class name="tests.DynamicLoadingEx1Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="handleEx1"/>
+          <include name="closeDown"/>
+        </methods>
+      </class> <!-- tests.DynamicLoadingEx1Test -->
     </classes>
   </test> <!-- AutomationDemoSite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

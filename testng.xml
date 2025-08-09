@@ -4,6 +4,7 @@
 		<classes>
 			<class name="tests.FormAuthenticationTest" />
 			<class name="tests.JavaScriptAlertsTest" />
+			<class name="tests.DynamicLoadingEx1Test"/>
 		</classes>
 	</test>
 </suite>
