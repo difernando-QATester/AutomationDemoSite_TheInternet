@@ -3,20 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="AutomationDemoSite(failed)">
     <classes>
-      <class name="tests.JavaScriptAlertsTest">
+      <class name="tests.FormAuthenticationTest">
         <methods>
           <include name="setUp"/>
-          <include name="testJsAlertPrompt"/>
           <include name="closeDown"/>
+          <include name="validateLogin"/>
         </methods>
-      </class> <!-- tests.JavaScriptAlertsTest -->
-      <class name="tests.DynamicLoadingEx1Test">
-        <methods>
-          <include name="setUp"/>
-          <include name="handleEx1"/>
-          <include name="closeDown"/>
-        </methods>
-      </class> <!-- tests.DynamicLoadingEx1Test -->
+      </class> <!-- tests.FormAuthenticationTest -->
     </classes>
   </test> <!-- AutomationDemoSite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

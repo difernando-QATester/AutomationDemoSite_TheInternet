@@ -9,6 +9,7 @@ import pages.DynamicLoadingEx1Page;
 import pages.DynamicLoadingPage;
 import pages.FormAuthenticationPage;
 import pages.HomePage;
+import pages.HoversPage;
 import pages.JavaScriptAlertsPage;
 import pages.SecureAreaPage;
 
@@ -21,6 +22,7 @@ public class BaseTest {
 	protected JavaScriptAlertsPage javascriptalertspage;
 	protected DynamicLoadingPage dynamicloadingpage;
 	protected DynamicLoadingEx1Page dynamicloadingex1page;
+	protected HoversPage hoverspage;
 	
 	@BeforeMethod
 	public void setUp() {
@@ -33,6 +35,7 @@ public class BaseTest {
 		javascriptalertspage = new JavaScriptAlertsPage(driver);
 		dynamicloadingpage = new DynamicLoadingPage (driver);
 		dynamicloadingex1page = new DynamicLoadingEx1Page(driver);
+		hoverspage = new HoversPage(driver);
 	}
 	@AfterMethod
 	public void closeDown() {

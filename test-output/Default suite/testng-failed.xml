@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.DynamicLodingEx1Test">
+      <class name="tests.HoversTest">
         <methods>
           <include name="setUp"/>
           <include name="closeDown"/>
-          <include name="handleEx1"/>
+          <include name="hoverOver"/>
         </methods>
-      </class> <!-- tests.DynamicLodingEx1Test -->
+      </class> <!-- tests.HoversTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
